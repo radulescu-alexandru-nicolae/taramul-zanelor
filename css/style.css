@@ -828,6 +828,7 @@
     
     .container-poza {
         min-width: 180px;
+        max-width: 180px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1357,6 +1358,15 @@
     
     .container-copil img {
         max-width: 100%;
+        transition: 0.5s all;
+        transform: scale(0.1);
+    }
+    
+    @media(min-width:780px) {
+        .container-copil img {
+            min-height: 500px;
+            max-height: 500px;
+        }
     }
     
     .conectarea {
@@ -1500,4 +1510,104 @@
         50% {
             top: 30px;
         }
+    }
+    
+    .second-copil-container {
+        overflow: hidden;
+    }
+    
+    .conectarea {
+        transition: 0.5s all;
+        transform: translateY(100%)
+    }
+    
+    .domenii-de-studiu {
+        background-color: rgb(35, 8, 41);
+        height: 800px;
+    }
+    /*here start domenii de studiu ***************/
+    
+    .domeniu-first-section {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .domeniu-program {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+        ;
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .domeniu-program img {
+        width: 100px;
+        height: 30px;
+    }
+    
+    .domeniu-program h2 {
+        color: #ff4880;
+        font-weight: 600;
+        font-family: 'Schoolbell', cursive;
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+    
+    .domeniu-text {
+        width: 100%;
+        margin-left: 20px;
+        text-align: left;
+    }
+    
+    .domeniu-text h2 {
+        color: white;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 800;
+        margin: 0;
+    }
+    
+    .domeniu-text p {
+        color: white;
+        font-weight: 800;
+        font-size: 17px;
+        font-family: 'Prompt', sans-serif;
+        line-height: 20px;
+        ;
+    }
+    
+    .tabel-domenii {
+        background-color: white;
+    }
+    
+    .container-comunicare {
+        max-height: 50px;
+        min-height: 50px;
+    }
+    
+    .aux-comunicare {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .titlu-comunicare h2 {
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+    }
+    
+    .comunicare-img {
+        height: 100%;
+        width: 67px;
+        height: 50px;
+        background-color: #FFEFEF;
+        border-top-left-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgb(173, 173, 173);
     }

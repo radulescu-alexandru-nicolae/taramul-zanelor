@@ -549,7 +549,7 @@
     }
     
     .background {
-        background: url("/poze/bg-home-top-section.png");
+        background: url("../poze/bg-home-top-section.png");
         width: 100%;
         min-height: 720px;
         background-repeat: no-repeat;

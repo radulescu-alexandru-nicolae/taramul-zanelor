@@ -29,7 +29,7 @@ window.onresize = function() {
 
         first_ul.style.transform = "translateY(0px)";
         first_ul.style.zIndex = "22";
-        second_ul.stle.transform = "translateY(50px)";
+        // second_ul.stle.transform = "translateY(50px)";
     }
 
 }
@@ -106,19 +106,3 @@ nav.onmouseout = function() {
 }
 
 /*animatiiiii **************************** */
-let afla_mai_mult = document.querySelector('.afla-mai-multe a');
-let container_title = document.querySelector('.container-title');
-let container_descriere = document.querySelector('.container-descriere');
-let container_animatie_ghidarea1 = document.querySelector('.container-animatie-ghidare1');
-let ghidarea_second = document.querySelector('.ghidarea-second');
-let container_img = document.querySelector('.container-copil img ');
-let container_conectare = document.querySelector('.conectarea');
-document.addEventListener('scroll', function(e) {
-    afla_mai_mult.style.transform = "rotate(0deg) translate(0px,0px)";
-    container_title.style.transform = "translateY(0px)"
-    container_descriere.style.transform = "translateY(0px)";
-    container_animatie_ghidarea1.style.transform = "translateY(0px)";
-    ghidarea_second.style.transform = "translateX(0px) rotate(0deg)";
-    container_img.style.transform = "scale(1)";
-    container_conectare.style.transform = "translateY(0)";
-})

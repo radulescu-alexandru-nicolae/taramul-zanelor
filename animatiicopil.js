@@ -3,9 +3,7 @@ let dezvoltare = document.querySelector('.dezvoltarea');
 
 window.onscroll = function(e) {
     if (window.matchMedia("(min-width: 1200px)").matches) {
-        if (window.scrollY < 1200) {
-            console.log('a');
-        }
+        if (window.scrollY < 1200) {}
     } else {
         if (window.matchMedia("(max-width:1200px)".matches)) {
             if (window.scrollY > 3500) {

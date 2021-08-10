@@ -26,7 +26,6 @@ meniu.addEventListener('click', (e) => {
 const style = window.getComputedStyle(meniu);
 window.onresize = function() {
     if (style.display === "none") {
-
         first_ul.style.transform = "translateY(0px)";
         first_ul.style.zIndex = "22";
         // second_ul.stle.transform = "translateY(50px)";
@@ -37,8 +36,12 @@ let despre_noi = document.querySelector('.despre-noi');
 let container_poze = document.querySelector('.container-poze');
 
 despre_noi.addEventListener('mouseover', (e) => {
-        container_poze.style.zIndex = "1";
-        despre_noi.stle.zIndex = "200";
+        if (e.target.tagName == 'A') {
+
+            container_poze.style.zIndex = "1";
+            despre_noi.style.zIndex = "200";
+
+        }
     })
     /*search meniu ******************************** */
 let search_meniu = document.querySelector(".search-meniu");
@@ -106,3 +109,14 @@ nav.onmouseout = function() {
 }
 
 /*animatiiiii **************************** */
+
+var scrollToTopBtn = document.querySelector(".up")
+var rootElement = document.documentElement
+
+function scrollToTop() {
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);

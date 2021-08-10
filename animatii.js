@@ -8,10 +8,12 @@ let container_conectare = document.querySelector('.conectarea');
 let incredere_actiune = document.querySelector('.incredere');
 let dezvoltare_actiune = document.querySelector('.dezvoltarea');
 let invatare_title = document.querySelector('.title-invatare-joaca');
+let nav_animatie = document.querySelector('nav');
 document.addEventListener('scroll', function(e) {
     afla_mai_mult.style.transform = "rotate(0deg) translate(0px,0px)";
     container_title.style.transform = "translateY(0px)"
     container_descriere.style.transform = "translateY(0px)";
+    nav_animatie.style.position = "fixed";
 
 })
 

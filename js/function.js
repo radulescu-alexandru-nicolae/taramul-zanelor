@@ -61,8 +61,6 @@ search.addEventListener('click', (e) => {
 /* second meniu ******************************* */
 let span_first_ul = document.querySelector('.first-ul span');
 let second_ul = document.querySelector('.second-ul');
-
-
 span_first_ul.style.background = "#ff4880";
 span_first_ul.addEventListener('click', (e) => {
     if (span_first_ul.style.background == "rgb(255, 72, 128)") {
